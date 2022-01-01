@@ -252,7 +252,7 @@ void loop() {
   int8_t ch_spo2_valid_maxim;  //indicator to show if the SPO2 calculation is valid
   int32_t n_heart_rate_maxim; //heart rate value
   int8_t  ch_hr_valid_maxim;  //indicator to show if the heart rate calculation is valid
-  maxim_heart_rate_and_oxygen_saturation(aun_ir_buffer, BUFFER_SIZE, aun_red_buffer, &n_spo2_maxim, &ch_spo2_valid_maxim, &n_heart_rate_maxim, &ch_hr_valid_maxim); 
+  v_maxim_heart_rate_and_oxygen_saturation(aun_ir_buffer, BUFFER_SIZE, aun_red_buffer, &n_spo2_maxim, &ch_spo2_valid_maxim, &n_heart_rate_maxim, &ch_hr_valid_maxim); 
 #ifdef DEBUG
   Serial.println("--MX--");
   Serial.print(elapsedTime);
